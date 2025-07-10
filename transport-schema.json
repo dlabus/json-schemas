@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TransportData",
+  "type": "object",
+  "properties": {
+    "startAddress": {
+      "type": "string",
+      "description": "Adres początkowy transportu"
+    },
+    "endAddress": {
+      "type": "string",
+      "description": "Adres końcowy transportu"
+    },
+    "quantity": {
+      "type": "number",
+      "description": "Ilość transportowanego towaru"
+    }
+  },
+  "required": ["startAddress", "endAddress", "quantity"],
+  "additionalProperties": false
+}
